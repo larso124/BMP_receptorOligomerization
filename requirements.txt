@@ -1,0 +1,4 @@
+# gillespy2 has matplotlib, numpy, and scipy as dependencies
+# Dependency packages are installed automatically when gillespy2 is installed
+gillespy2==1.3.*
+pandas==2.2.*
