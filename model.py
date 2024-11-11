@@ -49,7 +49,7 @@ class ParameterValues:
     init: pd.DataFrame
 
 
-def Model(parameter_values: ParameterValues | None = None):
+def SomeModel(parameter_values: ParameterValues | None = None) -> gillespy2.Model:
 
     # initialize
     model = gillespy2.Model(name="SSACSolver")

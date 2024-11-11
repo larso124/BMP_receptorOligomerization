@@ -3,7 +3,10 @@ import numpy as np
 import pandas as pd
 import sys  # library that allows into from operating system
 from datetime import datetime
-from model import Model, ParameterValues
+from gillespy2 import Model
+from gillespy2.core.results import Results
+
+from model import SomeModel, ParameterValues
 
 startTime = time.time()
 print(str(datetime.now()))
@@ -23,13 +26,12 @@ initReceptors = [3500, 3500, 7000]
 
 sys.path[:0] = [".."]
 
-model = Model(
+model: Model = SomeModel(
     ParameterValues(A1=A1, init=pd.read_csv(filename)),
     timespan=np.linspace(1, 100, 100),
 )
-results = model.run()
+results: Results = model.run()
 
-# results.to_csv('testData'+str(A1))
 results = results.to_array()
 print(results.shape)
 results1 = results.reshape(-1, results.shape[2])
