@@ -48,4 +48,4 @@ a-c. 36-cell 24-hour simulations were run for each receptor relative EC50 concen
 ## Figure 5
 
 a-c. The three initial graphs are representative schematics of the regulation modes. <br>
-d-i. Three hours of simulation were done to represent each line. The system was simulatied using the EC50 of the relative receptor as the final gradient maximum. Variables for this set of simulations included initial ligand concentration, final ligand concentration, and number of time steps. Regulation mode was encoded in the initial and final concentrations but also passed as a string for file naming.
+d-i. Three hours of simulation were done to represent each line. The system was simulatied using the EC50 of the relative receptor as the final gradient maximum. Variables for this set of simulations included initial ligand concentration (A1), final ligand concentration (AF), and number of time steps (tps). Regulation mode was encoded in the initial and final concentrations but also passed as a string for file naming.
